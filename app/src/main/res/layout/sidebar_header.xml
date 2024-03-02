@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="25dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:src="@drawable/github"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Most Starred"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/gray"
+        />
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Github Repositories"
+        app:layout_constraintTop_toBottomOf="@+id/fullName"
+        android:textAlignment="center"
+        android:layout_marginTop="-5dp"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/montserrat_medium"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:layout_marginTop="15dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

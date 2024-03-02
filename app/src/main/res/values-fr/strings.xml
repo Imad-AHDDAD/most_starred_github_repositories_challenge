@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">adria-pfe-github-repos</string>
+    <string name="trending">Tendance</string>
+    <string name="settings">Paramètres</string>
+    <string name="open">ouvrir</string>
+    <string name="close">fermer\n</string>
+    <string name="getting_repositories">Recherche en cours ...</string>
+    <string name="next_page">Page suivante</string>
+    <string name="hello_blank_fragment">Bonjour fragment vide</string>
+    <string name="english">Anglais</string>
+    <string name="fran_ais">Français</string>
+    <string name="language">Langue</string>
+    <string name="language_settings">Paramètres de langue</string>
+    <string name="settings_title">Paramètres</string>
+    <string name="display_mode">Mode d\'affichage</string>
+    <string name="trending_sidebar">Tendance</string>
+    <string name="dark">Sombre</string>
+    <string name="light">Clair</string>
+    <string name="display_mode_title">Mode d\'affichage</string>
+    <string name="favorite">Favori</string>
+    <string name="delete">Supprimer</string>
+    <string name="favorite_list">Liste des Favoris</string>
+
+</resources>

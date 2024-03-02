@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.a7dev.adria_pfe_github_repos.presentation.ui.githubrepositories.ListFragment"
+        android:label="Trending"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_listFragment_to_favoriteListFragment"
+            app:destination="@id/favoriteListFragment"
+            app:enterAnim="@anim/from_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.a7dev.adria_pfe_github_repos.presentation.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_languageSettingsFragment"
+            app:destination="@id/languageSettingsFragment"
+            app:enterAnim="@anim/from_right"/>
+        <action
+            android:id="@+id/action_settingsFragment_to_displayModeFragment"
+            app:destination="@id/displayModeFragment"
+            app:enterAnim="@anim/from_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/languageSettingsFragment"
+        android:name="com.a7dev.adria_pfe_github_repos.presentation.ui.languagesettings.LanguageSettingsFragment"
+        android:label="fragment_langage_settings"
+        tools:layout="@layout/fragment_langage_settings" />
+    <fragment
+        android:id="@+id/displayModeFragment"
+        android:name="com.a7dev.adria_pfe_github_repos.presentation.ui.displaymodesettings.DisplayModeFragment"
+        android:label="fragment_display_mode"
+        tools:layout="@layout/fragment_display_mode" />
+    <fragment
+        android:id="@+id/favoriteListFragment"
+        android:name="com.a7dev.adria_pfe_github_repos.presentation.ui.favoriteList.FavoriteListFragment"
+        android:label="fragment_favorite_list"
+        tools:layout="@layout/fragment_favorite_list" />
+</navigation>
